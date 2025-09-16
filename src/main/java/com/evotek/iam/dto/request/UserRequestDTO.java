@@ -10,6 +10,8 @@ import lombok.NoArgsConstructor;
 import lombok.experimental.FieldDefaults;
 import org.hibernate.validator.constraints.URL;
 
+import java.time.LocalDate;
+
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
@@ -19,7 +21,7 @@ public class UserRequestDTO {
     @NotBlank(message = "Full name cannot be blank")
     String fullName;
     @NotBlank(message = "Birth date cannot be blank")
-    String birthDate;
+    LocalDate birthDate;
     @NotBlank(message = "Phone cannot be blank")
     @Pattern(regexp = "^\\+?[0-9]{10,11}$", message = "Phone must be a valid phone number")
     String phone;

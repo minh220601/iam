@@ -6,13 +6,15 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.experimental.FieldDefaults;
 
+import java.time.LocalDate;
+
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
 public class UserResponseDTO {
     int id;
     String fullName;
-    String birthDate;
+    LocalDate birthDate;
     String phone;
     String address;
     String email;
