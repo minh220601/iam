@@ -1,5 +1,6 @@
 package com.evotek.iam.service;
 
+import com.evotek.iam.dto.request.PasswordRequestDTO;
 import com.evotek.iam.dto.request.UserInfoRequestDTO;
 import com.evotek.iam.dto.request.UserRequestDTO;
 import com.evotek.iam.dto.response.UserResponseDTO;
@@ -13,6 +14,6 @@ public interface UserService {
     UserResponseDTO createUser(UserRequestDTO userRequestDTO);
     UserResponseDTO updateInfoUser(int id, UserInfoRequestDTO userInfoRequestDTO);
     void updatePassword(int id, PasswordRequestDTO passwordRequestDTO);
-    //String updateAvatar(int id, MultipartFile avatar);
+    String updateAvatar(int id, MultipartFile avatar);
     void deleteUser(int id);
 }
